@@ -8,6 +8,10 @@
     "en": "The energy price !{{is|is not}} less than [[price]]",
     "nl": "De energieprijs !{{is|is niet}} kleiner dan [[price]]"
   },
+  "hint": {
+    "en": "This trigger will only occur when the energy price changes",
+    "nl": "Deze trigger wordt alleen uitgevoerd als de energieprijs verandert"
+  },
   "tokens": [
     {
       "type": "number",
@@ -23,6 +27,10 @@
     {
       "type": "number",
       "name": "price",
+      "title": {
+        "en": "Price",
+        "nl": "Prijs"
+      },
       "placeholder": "0.1",
       "min": 0,
       "max": 100,

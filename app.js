@@ -30,7 +30,6 @@ class DynamicEnergy extends Homey.App {
 
     const priceLTE = await this.homey.flow.getTriggerCard('pricelte');
     priceLTE.registerRunListener(async (args, state) => {
-      console.log('LTE check', args, state);
       if (typeof args.price === 'undefined') {
         return false;
       }
@@ -104,7 +103,15 @@ class DynamicEnergy extends Homey.App {
   async loadPrices(averagePrice) {
     this.log('Loading prices');
     const api = new Prices();
-    this.prices = await api.getPrices();
+    try {
+      this.prices = await api.getPrices();
+    } catch (e) {
+      this.prices = {
+        average: 0,
+        prices: [],
+      };
+      throw e;
+    }
   }
 
 }

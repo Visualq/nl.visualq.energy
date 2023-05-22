@@ -12,8 +12,8 @@
     "nl": "Dynamische Energie Prijzen"
   },
   "description": {
-    "en": "Access EpexSpot dynamic energy prices. These are used by ANWB Energy, Frank Energy and more",
-    "nl": "Toegang tot een dynamische energieprijzen die worden gehanteerd door ANWB Energy, Frank Energy, ZeroEnergy en meer"
+    "en": "Get the energy prices for dynamic contracts",
+    "nl": "De energie prijzen voor dynamische contracten"
   },
   "category": [
     "energy"
@@ -25,22 +25,26 @@
     "xlarge": "/assets/images/energy-xlarge.jpg"
   },
   "author": {
-    "name": "Wim Wisselink"
+    "name": "Wim Wisselink",
+    "email": "wim+homey@awesum.nl"
   },
   "tags": {
     "en": [
       "energy prices",
       "ANWB Energy",
       "EpexSpot",
+      "Tibber",
       "EnergyZero"
     ],
     "nl": [
       "Energie prijzen",
       "ANWB Energy",
       "EpexSpot",
+      "Tibber",
       "EnergyZero"
     ]
   },
+  "support": "mailto:wim+homey@awesum.nl",
   "brandColor": "#4287f5",
   "contributing": {
     "donate": {
