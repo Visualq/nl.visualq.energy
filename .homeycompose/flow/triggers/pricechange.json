@@ -1,0 +1,31 @@
+{
+
+  "title": {
+    "en": "Price change",
+    "nl": "Prijs verandering"
+  },
+  "hint": {
+    "en": "When the energy price changes",
+    "nl": "Wanneer de energieprijs verandert"
+  },
+  "tokens": [
+    {
+      "type": "number",
+      "name": "old_price",
+      "title": {
+        "en": "Old price",
+        "nl": "Oude prijs"
+      },
+      "example": "0.1"
+    },
+    {
+      "type": "number",
+      "name": "price",
+      "title": {
+        "en": "Price",
+        "nl": "Prijs"
+      },
+      "example": "0.1"
+    }
+  ]
+}

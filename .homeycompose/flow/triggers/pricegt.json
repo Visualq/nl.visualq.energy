@@ -1,0 +1,32 @@
+{
+
+  "title": {
+    "en": "Price >",
+    "nl": "Prijs >"
+  },
+  "titleFormatted": {
+    "en": "The energy price !{{is|is not}} greater than [[price]]",
+    "nl": "De energieprijs !{{is|is niet}} groter dan [[price]]"
+  },
+  "tokens": [
+    {
+      "type": "number",
+      "name": "price",
+      "title": {
+        "en": "Price",
+        "nl": "Prijs"
+      },
+      "example": "0.1"
+    }
+  ],
+  "args": [
+    {
+      "type": "number",
+      "name": "price",
+      "placeholder": "0.1",
+      "min": -100,
+      "max": 100,
+      "step": 0.01
+    }
+  ]
+}

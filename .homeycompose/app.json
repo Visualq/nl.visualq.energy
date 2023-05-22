@@ -1,0 +1,52 @@
+{
+  "id": "nl.visualq.energy",
+  "version": "0.1.1",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "name": {
+    "en": "Dynamic Energy Prices",
+    "nl": "Dynamische Energie Prijzen"
+  },
+  "description": {
+    "en": "Access EpexSpot dynamic energy prices. These are used by ANWB Energy, Frank Energy and more",
+    "nl": "Toegang tot een dynamische energieprijzen die worden gehanteerd door ANWB Energy, Frank Energy, ZeroEnergy en meer"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/energy-small.jpg",
+    "large": "/assets/images/energy-large.jpg",
+    "xlarge": "/assets/images/energy-xlarge.jpg"
+  },
+  "author": {
+    "name": "Wim Wisselink"
+  },
+  "tags": {
+    "en": [
+      "energy prices",
+      "ANWB Energy",
+      "EpexSpot",
+      "EnergyZero"
+    ],
+    "nl": [
+      "Energie prijzen",
+      "ANWB Energy",
+      "EpexSpot",
+      "EnergyZero"
+    ]
+  },
+  "brandColor": "#4287f5",
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "VisualQuake"
+      }
+    }
+  }
+}

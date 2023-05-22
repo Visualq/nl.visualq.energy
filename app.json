@@ -1,0 +1,216 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "nl.visualq.energy",
+  "version": "0.1.1",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "name": {
+    "en": "Dynamic Energy Prices",
+    "nl": "Dynamische Energie Prijzen"
+  },
+  "description": {
+    "en": "Access EpexSpot dynamic energy prices. These are used by ANWB Energy, Frank Energy and more",
+    "nl": "Toegang tot een dynamische energieprijzen die worden gehanteerd door ANWB Energy, Frank Energy, ZeroEnergy en meer"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/energy-small.jpg",
+    "large": "/assets/images/energy-large.jpg",
+    "xlarge": "/assets/images/energy-xlarge.jpg"
+  },
+  "author": {
+    "name": "Wim Wisselink"
+  },
+  "tags": {
+    "en": [
+      "energy prices",
+      "ANWB Energy",
+      "EpexSpot",
+      "EnergyZero"
+    ],
+    "nl": [
+      "Energie prijzen",
+      "ANWB Energy",
+      "EpexSpot",
+      "EnergyZero"
+    ]
+  },
+  "brandColor": "#4287f5",
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "VisualQuake"
+      }
+    }
+  },
+  "flow": {
+    "triggers": [
+      {
+        "title": {
+          "en": "Price change",
+          "nl": "Prijs verandering"
+        },
+        "hint": {
+          "en": "When the energy price changes",
+          "nl": "Wanneer de energieprijs verandert"
+        },
+        "tokens": [
+          {
+            "type": "number",
+            "name": "old_price",
+            "title": {
+              "en": "Old price",
+              "nl": "Oude prijs"
+            },
+            "example": "0.1"
+          },
+          {
+            "type": "number",
+            "name": "price",
+            "title": {
+              "en": "Price",
+              "nl": "Prijs"
+            },
+            "example": "0.1"
+          }
+        ],
+        "id": "pricechange"
+      },
+      {
+        "title": {
+          "en": "Price >",
+          "nl": "Prijs >"
+        },
+        "titleFormatted": {
+          "en": "The energy price !{{is|is not}} greater than [[price]]",
+          "nl": "De energieprijs !{{is|is niet}} groter dan [[price]]"
+        },
+        "tokens": [
+          {
+            "type": "number",
+            "name": "price",
+            "title": {
+              "en": "Price",
+              "nl": "Prijs"
+            },
+            "example": "0.1"
+          }
+        ],
+        "args": [
+          {
+            "type": "number",
+            "name": "price",
+            "placeholder": "0.1",
+            "min": -100,
+            "max": 100,
+            "step": 0.01
+          }
+        ],
+        "id": "pricegt"
+      },
+      {
+        "title": {
+          "en": "Price >=",
+          "nl": "Prijs >="
+        },
+        "titleFormatted": {
+          "en": "The energy price !{{is|is not}} greater than or equal to [[price]]",
+          "nl": "De energieprijs !{{is|is niet}} groter dan of gelijk aan [[price]]"
+        },
+        "tokens": [
+          {
+            "type": "number",
+            "name": "price",
+            "title": {
+              "en": "Price",
+              "nl": "Prijs"
+            },
+            "example": "0.1"
+          }
+        ],
+        "args": [
+          {
+            "type": "number",
+            "name": "price",
+            "placeholder": "0.1",
+            "min": -100,
+            "max": 100,
+            "step": 0.01
+          }
+        ],
+        "id": "pricegte"
+      },
+      {
+        "title": {
+          "en": "Price <",
+          "nl": "Prijs <"
+        },
+        "titleFormatted": {
+          "en": "The energy price !{{is|is not}} less than [[price]]",
+          "nl": "De energieprijs !{{is|is niet}} kleiner dan [[price]]"
+        },
+        "tokens": [
+          {
+            "type": "number",
+            "name": "price",
+            "title": {
+              "en": "Price",
+              "nl": "Prijs"
+            },
+            "example": "0.1"
+          }
+        ],
+        "args": [
+          {
+            "type": "number",
+            "name": "price",
+            "placeholder": "0.1",
+            "min": 0,
+            "max": 100,
+            "step": 0.01
+          }
+        ],
+        "id": "pricelt"
+      },
+      {
+        "title": {
+          "en": "Price <=",
+          "nl": "Prijs <="
+        },
+        "titleFormatted": {
+          "en": "The energy price !{{is|is not}} less than or equal to [[price]]",
+          "nl": "De energieprijs !{{is|is niet}} kleiner dan of gelijk aan [[price]]"
+        },
+        "tokens": [
+          {
+            "type": "number",
+            "name": "price",
+            "title": {
+              "en": "Price",
+              "nl": "Prijs"
+            },
+            "example": "0.1"
+          }
+        ],
+        "args": [
+          {
+            "type": "number",
+            "name": "price",
+            "placeholder": "0.1",
+            "min": -100,
+            "max": 100,
+            "step": 0.01
+          }
+        ],
+        "id": "pricelte"
+      }
+    ]
+  }
+}
