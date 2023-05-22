@@ -1,5 +1,8 @@
 {
   "0.1.1": {
     "en": "Basic API communication and triggers"
+  },
+  "0.1.2": {
+    "en": "Removed cloud platform due to lack of subscription"
   }
 }
